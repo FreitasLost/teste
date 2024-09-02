@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Real Sobre a Prefeitura de São Paulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votação Real Sobre a Prefeitura de São Paulo</h1>
+        <form id="votingForm">
+            <label>
+                <input type="radio" name="option" value="Pablo">
+                <img src="carros/pablo.jpg" alt="Pablo" class="option-image"> Pablo
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Datena">
+                <img src="carros/datena.jpg" alt="Datena" class="option-image"> Datena
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="GuilhermeBoulos">
+                <img src="carros/guilherme_boulos.jpg" alt="Guilherme Boulos" class="option-image"> Guilherme Boulos
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="Tabata">
+                <img src="carros/tabata.jpg" alt="Tabata" class="option-image"> Tabata
+            </label><br>
+            <label>
+                <input type="radio" name="option" value="RicardoNunes">
+                <img src="carros/ricardo_nunes.jpg" alt="Ricardo Nunes" class="option-image"> Ricardo Nunes
+            </label><br>
+            <button type="button" onclick="submitVote()">Votar</button>
+            <button type="button" id="changeVoteButton" onclick="changeVote()">Mudar meu voto</button>
+        </form>
+        <div id="result"></div>
+        <h2>Resultados:</h2>
+        <div id="results">
+            <p>Pablo: <span id="countPabloResult">0</span> votos</p>
+            <p>Datena: <span id="countDatenaResult">0</span> votos</p>
+            <p>Guilherme Boulos: <span id="countGuilhermeBoulosResult">0</span> votos</p>
+            <p>Tabata: <span id="countTabataResult">0</span> votos</p>
+            <p>Ricardo Nunes: <span id="countRicardoNunesResult">0</span> votos</p>
+        </div>
+        <h2>Opção Líder: <span id="leadingOption">Nenhuma ainda</span></h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
